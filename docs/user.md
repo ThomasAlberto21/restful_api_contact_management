@@ -2,9 +2,7 @@
 
 ## Register User API
 
-Endpoint :
-
-- POST /api/users
+Endpoint : POST /api/users
 
 Request Body :
 
@@ -40,9 +38,7 @@ Response Body Error :
 
 ## Login User API
 
-Endpoint :
-
-- POST /api/users/login
+Endpoint : POST /api/users/login
 
 Request Body :
 
@@ -75,9 +71,7 @@ Response Body Error :
 
 ## Update User API
 
-Endpoint :
-
-- PATCH /api/users/current
+Endpoint : PATCH /api/users/current
 
 Headers:
 
@@ -113,9 +107,7 @@ Response Body Error :
 
 ## Get User API
 
-Endpoint :
-
-- GET /api/users/current
+Endpoint : GET /api/users/current
 
 Headers :
 
@@ -142,9 +134,7 @@ Response Body Error :
 
 ## Logout User API
 
-Endpoint :
-
-- DELETE /api/users/logout
+Endpoint : DELETE /api/users/logout
 
 Headers :
 
