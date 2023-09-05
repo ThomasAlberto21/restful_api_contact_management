@@ -8,9 +8,9 @@ Request Body :
 
 ```json
 {
-  "username": "username",
-  "password": "password",
-  "name": "name"
+  "username": "string",
+  "password": "string",
+  "name": "string"
 }
 ```
 
@@ -19,8 +19,8 @@ Response Body Success :
 ```json
 {
   "data": {
-    "username": "username",
-    "name": "name"
+    "username": "string",
+    "name": "string"
   }
 }
 ```
@@ -44,8 +44,8 @@ Request Body :
 
 ```json
 {
-  "username": "username",
-  "password": "password"
+  "username": "string",
+  "password": "string"
 }
 ```
 
@@ -81,8 +81,8 @@ Request Body :
 
 ```json
 {
-  "name": "Update name again",
-  "password": "Update password again"
+  "name": "string",
+  "password": "string"
 }
 ```
 
@@ -91,8 +91,8 @@ Response Body Success :
 ```json
 {
   "data": {
-    "username": "username",
-    "name": "Update name again"
+    "username": "string",
+    "name": "string"
   }
 }
 ```
@@ -118,8 +118,8 @@ Response Body Success :
 ```json
 {
   "data": {
-    "username": "username",
-    "name": "name"
+    "username": "string",
+    "name": "string"
   }
 }
 ```
