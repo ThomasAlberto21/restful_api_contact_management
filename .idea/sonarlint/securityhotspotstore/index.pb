@@ -24,3 +24,13 @@ U
 %prisma/migrations/migration_lock.toml,4/9/49d9a6f38d32f9c3f59abb4adddb4cb67be6f3c3
 s
 Cprisma/migrations/20230906103819_create_table_contact/migration.sql,5/3/539b634f1bebfbf685492530fa2d96ea6ef5ffec
+s
+Cprisma/migrations/20230906105014_create_table_address/migration.sql,8/c/8cc50fa387f0ad7ccfab1c4a76db8a51ba4640d9
+J
+src/application/logging.js,6/b/6be2afcb8e906027e2327ec596656df071904235
+F
+src/application/web.js,4/c/4c8d2e5961ad6cd9d7f870f62c2325491c65b5e5
+K
+src/application/database.js,7/7/77b640f2a8914ffc36695d4ca1bf973becd643ca
+;
+.prettierrc,2/0/20137a9e94744624390b6748bc96df5ca1579b71
