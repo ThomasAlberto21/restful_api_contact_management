@@ -34,3 +34,23 @@ F
 .prettierrc,2/0/20137a9e94744624390b6748bc96df5ca1579b71
 K
 src/application/database.js,7/7/77b640f2a8914ffc36695d4ca1bf973becd643ca
+Q
+!src/controller/user-controller.js,2/2/22fb8969ed39ca10b5cdf0257f3b810dd0c25b6f
+K
+src/error/response-error.js,a/f/af25aaf7eced21f831b00dda80fbd8750127bd79
+R
+"src/middleware/error-middleware.js,a/e/ae6a7cea1ba0cb8044b7836b366638d18c3c0e3e
+;
+src/main.js,4/1/41d348bfb8135a570c1d2675c884f60724201c5c
+A
+test/user.test.js,7/c/7cccd74e939313738a1cb0754244d705b8bb7cc7
+H
+src/router/public-api.js,0/c/0c1352d2f11bfcb017c6cc699db9cb2d15011aea
+L
+src/validation/validation.js,d/c/dcae9152f3dc61681e9c4c5fa40aa18898833632
+Q
+!src/validation/user-validation.js,7/d/7dea2d7fc23864f37b545e77fdfcc61b35b85484
+L
+src/services/user-service.js,4/d/4d4ebd11850efb2f372e5642a017a73caafdda7c
+A
+test/test-util.js,4/e/4e2f58e4cc24fa5b762d76cd9271d8fde6ce5781
