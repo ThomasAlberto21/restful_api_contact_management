@@ -54,3 +54,7 @@ H
 src/router/public-api.js,0/c/0c1352d2f11bfcb017c6cc699db9cb2d15011aea
 A
 test/test-util.js,4/e/4e2f58e4cc24fa5b762d76cd9271d8fde6ce5781
+Q
+!src/middleware/auth-middleware.js,2/c/2c6a942750d08bb722afd5cdfbc1efd5638c55ed
+A
+src/router/api.js,5/0/508cb68abc430291d9f202bb10a24c092e4f3dfc
