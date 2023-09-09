@@ -5,6 +5,7 @@ import { ResponseError } from '../error/response-error.js';
 import {
   createAddressValidation,
   getAddressValidation,
+  updateAddressValidation,
 } from '../validation/address-validation.js';
 
 const checkContactMustExist = async (user, contactId) => {
@@ -69,7 +70,45 @@ const getAddress = async (user, contactId, addressId) => {
   return address;
 };
 
+const updateAddress = async (user, contactId, request) => {
+  contactId = await checkContactMustExist(user, contactId);
+  const address = await validate(updateAddressValidation, request);
+
+  const totalAddressInDatabase = await prismaClient.address.count({
+    where: {
+      contact_id: contactId,
+      id: address.id,
+    },
+  });
+
+  if (totalAddressInDatabase !== 1) {
+    throw new ResponseError(404, 'Address is not found');
+  }
+
+  return prismaClient.address.update({
+    where: {
+      id: address.id,
+    },
+    data: {
+      street: address.street,
+      city: address.city,
+      province: address.province,
+      country: address.country,
+      postal_code: address.postal_code,
+    },
+    select: {
+      id: true,
+      street: true,
+      city: true,
+      province: true,
+      country: true,
+      postal_code: true,
+    },
+  });
+};
+
 export default {
   createAddress,
   getAddress,
+  updateAddress,
 };
