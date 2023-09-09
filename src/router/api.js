@@ -24,5 +24,9 @@ useRouter.post(
   '/api/contacts/:contactId/addresses',
   addressController.createAddress,
 );
+useRouter.get(
+  '/api/contacts/:contactId/addresses/:addressId',
+  addressController.getAddress,
+);
 
 export { useRouter };
