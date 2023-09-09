@@ -107,8 +107,30 @@ const updateAddress = async (user, contactId, request) => {
   });
 };
 
+const removeAddress = async (user, contactId, addressId) => {
+  contactId = await checkContactMustExist(user, contactId);
+  addressId = validate(getAddressValidation, addressId);
+
+  const totalAddressInDatabase = await prismaClient.address.count({
+    where: {
+      contact_id: contactId,
+      id: addressId,
+    },
+  });
+
+  if (totalAddressInDatabase !== 1) {
+    throw new ResponseError(404, 'Address is not found');
+  }
+
+  return prismaClient.address.delete({
+    where: {
+      id: addressId,
+    },
+  });
+};
 export default {
   createAddress,
   getAddress,
   updateAddress,
+  removeAddress,
 };
